@@ -10,6 +10,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 'Get Weather'
-        run: >-
-        curl -X POST -H 'Content-type: application/json'
-          --data '{"text":"This is a test!"}' https://open.feishu.cn/open-apis/bot/v2/hook/7acb87e2-12d9-43a0-be87-7fd4822a2b07
+      run: >-
+        curl https://baidu.com
