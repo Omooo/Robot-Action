@@ -1,0 +1,13 @@
+name: 'GitHub Actions Weekly Report'
+
+on:
+  push:
+  schedule:
+    - cron: '0 */1 * * * ?'
+
+jobs:
+  bot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Report'
+        run: bash ./weekly.sh
