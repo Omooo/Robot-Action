@@ -10,4 +10,5 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Deploy crosstraining.top 🚀
-        run: curl -X POST -d {} https://api.netlify.com/build_hooks/6223c798a22dd19c7b80dcce
+        run: curl -X POST -H 'Content-Type: application/json' -d '{"msg_type":"text","content":{"text":"<at user_id = \"all\">All</at> 周报周报～"}}' https://open.feishu.cn/open-apis/bot/v2/hook/7acb87e2-12d9-43a0-be87-7fd4822a2b07
+
