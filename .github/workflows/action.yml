@@ -6,9 +6,8 @@ on:
     - cron: '0 */1 * * *'
 
 jobs:
-  bot:
-    runs-on: ubuntu-latest
+  deploy:
+    runs-on: ubuntu-20.04
     steps:
-      - name: 'Get Weather'
-      run: >-
-        curl https://baidu.com
+      - name: Deploy crosstraining.top 🚀
+        run: curl -X POST -d {} https://api.netlify.com/build_hooks/6223c798a22dd19c7b80dcce
