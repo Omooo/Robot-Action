@@ -1,0 +1,15 @@
+name: 'GitHub Actions Lunch Reminder Robot'
+
+on:
+  schedule:
+    - cron: '0 3 * * 1-5'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Git checkout
+        uses: actions/checkout@v2
+        with: { ref: main }
+      - name: Lunch Reminder
+        run: curl -X POST -H 'Content-Type:application/json' -d '{"msg_type":"text","content":{"text":"<at user_id = \"all\">All</at> 外卖外卖～"}}' https://open.feishu.cn/open-apis/bot/v2/hook/7acb87e2-12d9-43a0-be87-7fd4822a2b07
