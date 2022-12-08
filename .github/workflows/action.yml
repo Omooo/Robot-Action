@@ -2,7 +2,7 @@ name: 'GitHub Actions Weekly Robot'
 
 on:
   schedule:
-    - cron: '0 8 * * 4'
+    - cron: '48 7 * * 4'
 
 jobs:
   deploy:
