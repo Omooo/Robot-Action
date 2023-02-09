@@ -2,7 +2,7 @@ name: 'GitHub Actions Food Robot'
 
 on:
   schedule:
-    - cron: '41 9 * * 1-5'
+    - cron: '45 9 * * 1-5'
 
 jobs:
   deploy:
