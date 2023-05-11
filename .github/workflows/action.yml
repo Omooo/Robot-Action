@@ -2,7 +2,7 @@ name: 'GitHub Actions Weekly Robot'
 
 on:
   schedule:
-    - cron: '48 7 * * 4'
+    - cron: '55 7 * * 4'
 
 jobs:
   deploy:
@@ -12,4 +12,4 @@ jobs:
         uses: actions/checkout@v2
         with: { ref: main }
       - name: Weekly Reporter
-        run: curl -X POST -H 'Content-Type:application/json' -d '{"msg_type":"text","content":{"text":"<at user_id = \"all\">All</at> 周报周报～"}}' https://open.feishu.cn/open-apis/bot/v2/hook/d4131467-eeb1-485f-b5ef-22bf72900db4
+        run: curl -X POST -H 'Content-Type:application/json' -d '{"msg_type":"text","content":{"text":"<at user_id = \"all\">All</at> 周报周报～"}}' https://open.feishu.cn/open-apis/bot/v2/hook/b761e15f-c8ac-4e31-8612-1443f487d3a1
